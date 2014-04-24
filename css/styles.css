@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Helvetica Neue";
+}
+
+#container {
+  width: 320px;
+  height: 586px;
+}
+
+#header {
+  position: relative;
+  width: 320px;
+  height: 120px;
+  overflow: hidden;
+  text-align: center;
+}
+#header-content {
+  position: absolute;
+  width: 320px;
+  height: 120px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transform: translateZ(0);
+}
+#header-background {
+  position: absolute;
+  width: 640px;
+  height: 240px;
+  transform: scale(.5,.5);
+  top: -10px;
+  left: -10px;
+  background-image: url(../mandelbrot.jpg);
+  background-width: 300%;
+  background-height: 300%;
+  -webkit-transform: translateZ(0);
+  -webkit-filter: blur(10px);
+}
+
+#scroller {
+  height: 466px;
+  overflow-y: hidden; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
+#wrap {
+  background: #eee;
+  -webkit-transform: translateZ(0);
+}
+
+#wrap div {
+  margin: 5px;
+  background-color: #fff;
+}
